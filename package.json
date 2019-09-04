@@ -55,6 +55,7 @@
     "cross-env": "^5.2.1",
     "electron": "^6.0.7",
     "electron-builder": "^21.2.0",
+    "eslint-utils": "^1.4.2",
     "prettier": "^1.18.2",
     "tslint": "^5.19.0",
     "wait-on": "^3.3.0"
