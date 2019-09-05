@@ -10,6 +10,7 @@
   "main": "public/electron.js",
   "scripts": {
     "build": "rescripts build",
+    "build-storybook": "build-storybook -s public",
     "dev": "concurrently -n react,electron -k -c red,green \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "eject": "react-scripts eject",
     "preelectron-pack": "yarn build",
@@ -17,6 +18,7 @@
     "format": "prettier \"**/*.{js,ts,tsx,css,graphql}\" --write",
     "postinstall": "electron-builder install-app-deps",
     "start": "rescripts start",
+    "storybook": "start-storybook -p 9009 -s public",
     "test": "rescripts test"
   },
   "browserslist": {
@@ -36,28 +38,33 @@
   },
   "dependencies": {
     "@blueprintjs/core": "^3.18.0",
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.4",
-    "@types/react": "16.9.2",
-    "@types/react-dom": "16.9.0",
-    "@types/styled-components": "^4.1.18",
     "electron-is-dev": "^1.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
-    "styled-components": "^4.3.2",
-    "typescript": "3.6.2"
+    "react-scripts": "^3.1.1",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "@rescripts/cli": "^0.0.11",
     "@rescripts/rescript-env": "^0.0.10",
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/addon-links": "^5.1.11",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/react": "^5.1.11",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.4",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "@types/storybook__addon-actions": "^3.4.3",
+    "@types/storybook__react": "^4.0.2",
+    "@types/styled-components": "^4.1.18",
+    "awesome-typescript-loader": "^5.2.1",
     "concurrently": "^4.1.2",
     "cross-env": "^5.2.1",
     "electron": "^6.0.7",
     "electron-builder": "^21.2.0",
-    "eslint-utils": "^1.4.2",
     "prettier": "^1.18.2",
-    "tslint": "^5.19.0",
+    "typescript": "3.6.2",
     "wait-on": "^3.3.0"
   },
   "build": {
