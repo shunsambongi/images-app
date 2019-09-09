@@ -1,8 +1,15 @@
 import React from 'react';
+import MainContent from './components/MainContent';
+import TabBar from './components/TabBar';
+import AddressBar from './components/AddressBar';
 
 const App: React.FC = () => {
   return (
-    <div>I deleted everything</div>
+    <div>
+      <TabBar />
+      <AddressBar />
+      <MainContent>hello</MainContent>
+    </div>
   );
 };
 
