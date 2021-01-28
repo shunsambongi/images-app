@@ -53,7 +53,7 @@
     "@rescripts/rescript-env": "^0.0.10",
     "concurrently": "^4.1.2",
     "cross-env": "^5.2.1",
-    "electron": "^6.0.7",
+    "electron": "^9.4.0",
     "electron-builder": "^21.2.0",
     "eslint-utils": "^1.4.2",
     "prettier": "^1.18.2",
